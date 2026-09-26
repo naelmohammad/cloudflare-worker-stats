@@ -1,0 +1,19 @@
+{
+  "name": "cloudflare-worker-stats",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker that generates a dynamic SVG bar chart for website traffic",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "screenshots": "node scripts/generate-screenshots.mjs"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.22.0",
+    "@cloudflare/workers-types": "^5.20260831.1",
+    "typescript": "^7.0.2",
+    "vitest": "~4.1.11",
+    "esbuild": "^0.28.2",
+    "wrangler": "^4.127.1"
+  }
+}
